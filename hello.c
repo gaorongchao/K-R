@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 main()
 {
 	float fahr,celsius;
@@ -8,6 +9,7 @@ main()
 	upper = 300;
 	step  = 20;
 	fahr  = lower;
+	printf("Tem\n");
 	while(fahr<=upper)
 	{
 		celsius = 5.0*(fahr-32.0)/9.0;
