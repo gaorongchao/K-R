@@ -1,6 +1,8 @@
 #include <stdio.h>
 /* vim 运行方式 : ":!gcc hello.c"
- * 然后会生成.exe的文件*/
+ * 然后会生成.exe的文件
+ * 然后生成的.exe文件也可以直接用":!a.exe" 运行程序*/
+
 
 main()
 {
