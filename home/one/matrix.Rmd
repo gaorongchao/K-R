@@ -1,0 +1,5 @@
+```{r}
+data=read.table("test_result.txt",sep=",",stringsAsFactors = FALSE)
+data=data[1:dim(data)[1]]
+solve(data)
+```

@@ -3,7 +3,7 @@ use warnings;
 
 
 my @array;
-my $n=10;
+my $n=5;
 
 for (my $i=0;$i<$n;$i++)
 {
