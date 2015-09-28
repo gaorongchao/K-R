@@ -1,5 +1,6 @@
 #include<stdio.h>
-#define N 10
+#include<time.h>
+#define N 20
 
 //抄过来的 http://blog.csdn.net/abcjennifer/article/details/6693612
 int getA(int arcs[N][N],int n)//按第一行展开计算|A|
@@ -70,8 +71,12 @@ int main()
 		int astar[N][N];
 		int i,j;
 		int n;
+		clock_t start,finish;
+		double duration;
+
 		while(scanf("%d",&n)!=EOF && n)
 		{
+				start=clock();
 				for(i=0;i<n;i++)
 				{
 						for(j=0;j<n;j++)
@@ -106,9 +111,10 @@ int main()
 						}
 				}
 				printf("\n");
-
+				finish=clock();
+				duration=(double)(finish-start)/CLOCKS_PER_SEC;
+				printf("time is %f seconds\n",duration);
 		}
-
 
 		return 0;
 }
